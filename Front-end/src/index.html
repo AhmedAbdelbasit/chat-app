@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Trial</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/materialize.min.css">
+  <style>
+    header {
+      background-image: url(assets/img/header.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 1000px;
+    }
+  </style>
+</head>
+<body>
+  <!-- navbar -->
+  <header>
+    <div class="navbar-fixed">
+    <nav class="nav-wrapper transparent">
+      <div class="container">
+        <a href="/" class="brand-logo black-text">Trial</a>
+        <a href="" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons black-text">menu</i>
+        </a>
+        <!-- navbar contents -->
+        <app-navbar></app-navbar>
+
+        <!-- Registration Form -->
+        <app-signup></app-signup>
+      </div>
+    </nav>
+  </div>
+  </header>
+
+  <app-root></app-root>
+
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.sidenav').sidenav();
+      $('.modal').modal();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.container {
+    padding: 10px;
+}
+
+#submit {
+    margin-left: 5px;
+}
+
+#cancel {
+    margin-right: 5px;
+}

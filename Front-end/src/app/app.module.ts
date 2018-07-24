@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { AuthService } from './auth/auth.service';
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import { AppRoutingModule } from './/app-routing.module';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent, NavbarComponent, SignupComponent]
 })
 export class AppModule { }
